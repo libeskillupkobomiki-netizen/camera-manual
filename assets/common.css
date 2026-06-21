@@ -133,7 +133,6 @@ body {
 }
 
 .step-nav a .step-num {
-  font-size: 12px;
   opacity: .7;
   letter-spacing: .06em;
 }
@@ -416,15 +415,13 @@ body {
 }
 
 .step-num {
-  width: 34px;
-  height: 34px;
-  background: var(--step2-dark);
-  color: #fff;
+  width: auto%;
+  height: auto;
+  color: #000;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
   flex-shrink: 0;
 }
