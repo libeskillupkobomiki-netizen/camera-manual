@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEP 1 検品 — 中古カメラ 検品・清掃マニュアル</title>
+<link rel="stylesheet" href="assets/common.css">
+</head>
+<body class="step1-page">
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <a href="index.html" class="logo">
+    中古カメラ 荷受・検品・清掃マニュアル
+    <span>Used Camera Inspection &amp; Cleaning Manual</span>
+  </a>
+  <nav class="step-nav">
+    <a href="index.html">🏠 TOP</a>
+    <a href="step1.html" class="active-step1">🛠️ <span class="step-num">STEP 1</span> 検品</a>
+    <a href="step2.html">🧹 <span class="step-num">STEP 2</span> 清掃</a>
+  </nav>
+</header>
+
+<!-- タブバー -->
+<div class="tab-bar">
+  <button data-tab="digital-slr">① デジタル一眼レフ</button>
+  <button data-tab="mirrorless">② ミラーレス</button>
+  <button data-tab="prime">③ 単焦点レンズ</button>
+  <button data-tab="standard-zoom">④ 標準ズーム</button>
+  <button data-tab="tele-zoom">⑤ 高倍率ズーム</button>
+  <button data-tab="compact">⑥ コンデジ</button>
+  <button data-tab="film-slr">⑦ フィルム一眼レフ</button>
+  <button data-tab="film-compact">⑧ フィルムコンパクト</button>
+  <button data-tab="mf-lens">⑨ マニュアルレンズ</button>
+</div>
+
+<div class="page-body">
+
+  <!-- ══════════════════════════════════════
+       ① デジタル一眼レフ（本体）
+  ══════════════════════════════════════ -->
+  <div id="digital-slr" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- ボディ本体 -->
+            <rect x="80" y="70" width="220" height="140" rx="12" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- グリップ -->
+            <rect x="265" y="80" width="48" height="130" rx="10" fill="#C8DDD0" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- ペンタプリズム（山型） -->
+            <polygon points="140,70 200,35 260,70" fill="#AABFB5" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- マウント（円） -->
+            <ellipse cx="185" cy="150" rx="45" ry="48" fill="#D4E8DE" stroke="#2A6050" stroke-width="2"/>
+            <ellipse cx="185" cy="150" rx="28" ry="30" fill="#1A2A20" stroke="#2A6050" stroke-width="1.5"/>
+            <ellipse cx="185" cy="150" rx="14" ry="15" fill="#1A1A2A"/>
+            <!-- シャッターボタン -->
+            <ellipse cx="268" cy="78" rx="10" ry="6" fill="#9AAAA0" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- ファインダー接眼 -->
+            <rect x="184" y="35" width="32" height="22" rx="4" fill="#2A3A2A" stroke="#4A8060" stroke-width="1"/>
+            <line x1="185" y1="35" x2="130" y2="10" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="185" cy="35" r="2.5" fill="#1A3A2A"/>
+            <rect x="88" y="0" width="84" height="18" rx="3" fill="#1A3A2A"/>
+<text x="130" y="13" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ファインダー</text>
+<text x="130" y="33" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ゴム劣化・視野確認</text>
+            <line x1="200" y1="70" x2="200" y2="10" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="200" cy="70" r="2.5" fill="#1A3A2A"/>
+            <rect x="158" y="0" width="72" height="18" rx="3" fill="#1A3A2A"/>
+<text x="194" y="13" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ペンタ部</text>
+<text x="194" y="33" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">キズ・凹み</text>
+            <line x1="162" y1="128" x2="60" y2="90" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="162" cy="128" r="2.5" fill="#1A3A2A"/>
+            <rect x="10" y="80" width="72" height="18" rx="3" fill="#1A3A2A"/>
+<text x="46" y="93" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント</text>
+<text x="46" y="113" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ガタ・電気接点</text>
+            <line x1="268" y1="78" x2="340" y2="55" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="268" cy="78" r="2.5" fill="#1A3A2A"/>
+            <rect x="310" y="42" width="98" height="18" rx="3" fill="#1A3A2A"/>
+<text x="359" y="55" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">シャッターボタン</text>
+<text x="359" y="75" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">半押し感触確認</text>
+            <line x1="289" y1="150" x2="370" y2="180" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="289" cy="150" r="2.5" fill="#1A3A2A"/>
+            <rect x="330" y="170" width="72" height="18" rx="3" fill="#1A3A2A"/>
+<text x="366" y="183" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">グリップ</text>
+<text x="366" y="203" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">劣化・剥がれ</text>
+            <line x1="185" y1="195" x2="130" y2="230" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="185" cy="195" r="2.5" fill="#1A3A2A"/>
+            <rect x="60" y="220" width="100" height="18" rx="3" fill="#1A3A2A"/>
+<text x="110" y="233" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント接点</text>
+<text x="110" y="253" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">汚れ・腐食確認</text>
+          </svg>
+          <div class="fig-cap">ボディ前面の各部確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- ボディ背面 -->
+            <rect x="60" y="60" width="240" height="160" rx="12" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- グリップ -->
+            <rect x="278" y="68" width="42" height="150" rx="10" fill="#C8DDD0" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- 液晶モニター -->
+            <rect x="80" y="90" width="150" height="100" rx="6" fill="#1A2A3A" stroke="#2A6050" stroke-width="2"/>
+            <rect x="85" y="95" width="140" height="90" rx="4" fill="#2A3A4A"/>
+            <!-- ファインダー接眼 -->
+            <ellipse cx="258" cy="82" rx="16" ry="12" fill="#1A2A20" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- ダイヤル類 -->
+            <rect x="280" y="82" width="30" height="16" rx="6" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <line x1="155" y1="140" x2="80" y2="50" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="155" cy="140" r="2.5" fill="#1A3A2A"/>
+            <rect x="24" y="38" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="64" y="51" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">液晶モニター</text>
+<text x="64" y="71" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ドット欠け・ひび</text>
+            <line x1="258" y1="70" x2="200" y2="30" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="258" cy="70" r="2.5" fill="#1A3A2A"/>
+            <rect x="155" y="18" width="90" height="18" rx="3" fill="#1A3A2A"/>
+<text x="200" y="31" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ファインダー</text>
+<text x="200" y="51" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">見え・視度調整</text>
+            <line x1="295" y1="82" x2="360" y2="55" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="295" cy="82" r="2.5" fill="#1A3A2A"/>
+            <rect x="322" y="42" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="362" y="55" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">操作ダイヤル</text>
+<text x="362" y="75" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">回転・クリック確認</text>
+            <line x1="260" y1="170" x2="370" y2="200" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="260" cy="170" r="2.5" fill="#1A3A2A"/>
+            <rect x="330" y="190" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="370" y="203" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ボタン類</text>
+<text x="370" y="223" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">押し感・刻印確認</text>
+            <line x1="155" y1="192" x2="100" y2="240" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="155" cy="192" r="2.5" fill="#1A3A2A"/>
+            <rect x="40" y="228" width="100" height="18" rx="3" fill="#1A3A2A"/>
+<text x="90" y="241" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">バッテリー蓋</text>
+<text x="90" y="261" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ロック・パッキン</text>
+          </svg>
+          <div class="fig-cap">ボディ背面・操作系の確認ポイント</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">外装全体のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">前面・背面・上面・底面・側面を全周目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">液晶モニターの傷・割れ・ドット抜き</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電源ON後、全面グレー表示で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">ファインダー接眼部ラバーの状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">剥がれ・劣化・ひび割れを目視する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">グリップラバーの剥がれ・べたつき</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">経年劣化したゴム素材は加水分解に注意する。</div></div>
+        <div class="col3"><div class="col3-body">古い機種は加水分解が多い。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">ホットシューの腐食・変形</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">目視確認。接点もチェックする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">各ダイヤル・ボタンのガタ・欠損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">シャッターボタン・モードダイヤル等を操作して確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-07</div><div class="item-name">マウント部の傷・変形・ゆがみ</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">レンズ装着・取り外しで動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-08</div><div class="item-name">三脚座ネジ穴の破損・ナメ</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ネジを実際に通してチェックする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-09</div><div class="item-name">バッテリー室・カードスロットの変形・腐食</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">端子部も目視する。</div></div>
+        <div class="col3"><div class="col3-body">液漏れ痕は要注意。</div></div>
+      </div></div>
+    </div>
+
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">電源ON/OFFの動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">起動時間・起動画面の異常がないか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">シャッター動作（全速確認）</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">B・低速・高速すべて試写する。</div></div>
+        <div class="col3"><div class="col3-body">シャッター幕の破損に注意。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">シャッター幕の変形・穴・汚れ</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ミラーアップ状態でLED照射して目視する。</div></div>
+        <div class="col3"><div class="col3-body">幕破損は修理費が高額。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">ミラーの動作・傷・汚れ</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ミラーアップ時に目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">AFの合焦動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">各AFポイントで動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">ファインダー像（カビ・曇り）</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">明るい方向へ向けて確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-07</div><div class="item-name">ショット数（シャッター回数）</div><div class="warn-badge">⚠ 要記録</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">EXIFまたはShutterCounterで確認する。</div></div>
+        <div class="col3"><div class="col3-body">高ショット数は記載必須。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-08</div><div class="item-name">センサーゴミ・キズ・腐食</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">F16以上で白壁を撮影して確認する。</div></div>
+        <div class="col3"><div class="col3-body">カビ・油膜は減額要因。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-09</div><div class="item-name">メモリーカード読み書き</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">CF・SD（デュアルスロット機は両方）で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-10</div><div class="item-name">バッテリー残量・膨張</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">純正/互換バッテリーの区別も記録する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Nikon D800系：左側AF精度</div><div class="warn-badge">⚠ 初期ロット</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">左AFポイントのピントを必ず確認する。</div></div>
+        <div class="col3"><div class="col3-body">D800初期ロットに注意。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">古い機種（〜2010年）：内部潤滑油の飛散</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">シャッター幕・ファインダー内に油点がないか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">防塵防滴機種：シールの劣化</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">バッテリー室パッキンの状態を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#digital-slr -->
+
+  <!-- ══════════════════════════════════════
+       ② ミラーレス〜⑧ フィルムコンパクト
+       ※ Coworkで各ジャンルの内容を追加する
+  ══════════════════════════════════════ -->
+  <div id="mirrorless" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- ボディ（薄め） -->
+            <rect x="80" y="80" width="220" height="120" rx="10" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- グリップ（浅め） -->
+            <rect x="270" y="88" width="42" height="112" rx="8" fill="#C8DDD0" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- マウント（大径） -->
+            <ellipse cx="180" cy="143" rx="52" ry="52" fill="#D4E8DE" stroke="#2A6050" stroke-width="2"/>
+            <ellipse cx="180" cy="143" rx="36" ry="36" fill="#1A2A20" stroke="#2A6050" stroke-width="1.5"/>
+            <ellipse cx="180" cy="143" rx="16" ry="16" fill="#1A1A2A"/>
+            <!-- 小型ビューファインダー -->
+            <rect x="190" y="82" width="60" height="16" rx="4" fill="#2A3A2A" stroke="#4A8060" stroke-width="1"/>
+            <line x1="220" y1="82" x2="200" y2="45" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="220" cy="82" r="2.5" fill="#1A3A2A"/>
+            <rect x="150" y="33" width="90" height="18" rx="3" fill="#1A3A2A"/>
+<text x="195" y="46" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">EVF/ファインダー</text>
+<text x="195" y="66" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ドット欠け確認</text>
+            <line x1="145" y1="110" x2="60" y2="80" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="145" cy="110" r="2.5" fill="#1A3A2A"/>
+            <rect x="4" y="68" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="44" y="81" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント径</text>
+<text x="44" y="101" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">爪・電気接点</text>
+            <line x1="178" y1="180" x2="100" y2="225" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="178" cy="180" r="2.5" fill="#1A3A2A"/>
+            <rect x="28" y="215" width="100" height="18" rx="3" fill="#1A3A2A"/>
+<text x="78" y="228" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">センサー面</text>
+<text x="78" y="248" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">傷・ゴミ確認</text>
+            <line x1="291" y1="100" x2="370" y2="75" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="291" cy="100" r="2.5" fill="#1A3A2A"/>
+            <rect x="330" y="63" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="371" y="76" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">グリップ</text>
+<text x="371" y="96" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">素材劣化確認</text>
+            <line x1="310" y1="155" x2="380" y2="185" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="310" cy="155" r="2.5" fill="#1A3A2A"/>
+            <rect x="342" y="175" width="68" height="18" rx="3" fill="#1A3A2A"/>
+<text x="376" y="188" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ダイヤル</text>
+<text x="376" y="208" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">操作感確認</text>
+          </svg>
+          <div class="fig-cap">ミラーレスボディ前面の確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- 背面 -->
+            <rect x="60" y="70" width="240" height="150" rx="10" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- 大型液晶（チルト想定） -->
+            <rect x="75" y="85" width="165" height="120" rx="6" fill="#1A2A3A" stroke="#2A6050" stroke-width="2"/>
+            <rect x="80" y="90" width="155" height="110" rx="4" fill="#2A3A4A"/>
+            <!-- タッチ示唆 -->
+            <text x="158" y="148" font-family="sans-serif" font-size="10" fill="#6AAABB" text-anchor="middle">タッチ液晶</text>
+            <!-- EVF -->
+            <ellipse cx="255" cy="88" rx="16" ry="10" fill="#1A2A20" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- USB端子 -->
+            <rect x="58" y="155" width="6" height="28" rx="2" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <line x1="75" y1="138" x2="24" y2="100" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="75" cy="138" r="2.5" fill="#1A3A2A"/>
+            <rect x="0" y="88" width="48" height="18" rx="3" fill="#1A3A2A"/>
+<text x="24" y="101" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">チルト液晶</text>
+<text x="24" y="121" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ヒンジ・表示確認</text>
+            <line x1="255" y1="78" x2="255" y2="40" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="255" cy="78" r="2.5" fill="#1A3A2A"/>
+            <rect x="200" y="28" width="88" height="18" rx="3" fill="#1A3A2A"/>
+<text x="244" y="41" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">EVF接眼部</text>
+<text x="244" y="61" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ゴム・視野確認</text>
+            <line x1="61" y1="165" x2="10" y2="200" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="61" cy="165" r="2.5" fill="#1A3A2A"/>
+            <rect x="0" y="192" width="50" height="18" rx="3" fill="#1A3A2A"/>
+<text x="25" y="205" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">USB端子</text>
+<text x="25" y="225" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">破損・腐食</text>
+            <line x1="295" y1="100" x2="370" y2="75" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="295" cy="100" r="2.5" fill="#1A3A2A"/>
+            <rect x="330" y="63" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="371" y="76" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">操作ボタン</text>
+<text x="371" y="96" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">反応・刻印確認</text>
+            <line x1="245" y1="195" x2="340" y2="225" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="245" cy="195" r="2.5" fill="#1A3A2A"/>
+            <rect x="300" y="215" width="90" height="18" rx="3" fill="#1A3A2A"/>
+<text x="345" y="228" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">バッテリー室</text>
+<text x="345" y="248" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ロック・端子確認</text>
+          </svg>
+          <div class="fig-cap">背面・インターフェース確認ポイント</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">外装全体のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">前面・背面・上面・底面・側面を全周目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">液晶モニターの傷・割れ・ドット抜き</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電源ON後、全面グレー表示で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">チルト・バリアングル液晶のヒンジ状態</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">開閉動作・ガタ・破損を確認する。</div></div>
+        <div class="col3"><div class="col3-body">ヒンジ部破損は高額修理になる場合がある。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">ファインダー（EVF）接眼部ラバーの状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">剥がれ・劣化・ひび割れを目視する。EVF非搭載機種はスキップ。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">グリップラバーの剥がれ・べたつき</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">経年劣化したゴム素材は加水分解に注意する。</div></div>
+        <div class="col3"><div class="col3-body">古い機種は加水分解が多い。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">各ダイヤル・ボタンのガタ・欠損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">シャッターボタン・モードダイヤル等を操作して確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-07</div><div class="item-name">マウント部の傷・変形・ゆがみ</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">レンズ装着・取り外しで動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-08</div><div class="item-name">三脚座ネジ穴の破損・ナメ</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ネジを実際に通してチェックする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-09</div><div class="item-name">バッテリー室・カードスロットの変形・腐食</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">端子部も目視する。</div></div>
+        <div class="col3"><div class="col3-body">液漏れ痕は要注意。</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">電源ON/OFFの動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">起動時間・起動画面の異常がないか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">シャッター動作（電子・機械）</div><div class="warn-badge">⚠ 両方確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電子シャッターと機械シャッターの両方で試写する。</div></div>
+        <div class="col3"><div class="col3-body">電子シャッター使用時は動体歪みの有無も確認する。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">EVF（電子ビューファインダー）の表示</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">接眼時の映像確認、ドット抜き・輝度ムラ・遅延を確認する。EVF非搭載機種はスキップ。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">AFの合焦精度・速度</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">各AFモードで動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">IBIS（ボディ内手ブレ補正）動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">手持ちで構え、水平線等でブレ補正が機能するか確認する。搭載機種のみ。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">ショット数（シャッター回数）</div><div class="warn-badge">⚠ 要記録</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">EXIFまたは専用ツールで確認する。</div></div>
+        <div class="col3"><div class="col3-body">高ショット数は記載必須。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-07</div><div class="item-name">センサーゴミ・キズ・腐食</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">F16以上で白壁を撮影して確認する。</div></div>
+        <div class="col3"><div class="col3-body">カビ・油膜は減額要因。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-08</div><div class="item-name">メモリーカード読み書き</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">SD（デュアルスロット機は両方）で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-09</div><div class="item-name">バッテリー残量・膨張</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">純正/互換バッテリーの区別も記録する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-10</div><div class="item-name">USB端子の動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">充電またはPC接続で動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Sony α：センサーシフトIBIS</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">IBIS ON/OFFで手持ち撮影し動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">α7 III以降の搭載機種で確認。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">Fujifilm X：フィルムシミュレーション</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">各フィルムシミュレーションへの切り替えが正常か確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">Canon EOS R：RFマウント接点</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">マウント接点の汚れ・腐食を確認する。</div></div>
+        <div class="col3"><div class="col3-body">接点不良はAF・IS不動の原因になる。</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#mirrorless -->
+
+  <div id="prime" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- レンズ鏡胴 -->
+            <rect x="80" y="90" width="220" height="80" rx="14" fill="#E8F2EE" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- マウント部 -->
+            <rect x="80" y="90" width="64" height="80" rx="14" fill="#C8DDD0" stroke="#2A6050" stroke-width="2"/>
+            <!-- フォーカスリング -->
+            <rect x="80" y="102" width="14" height="56" rx="4" fill="#1A3A2A" stroke="#2A6050" stroke-width="1"/>
+            <!-- 前玉 -->
+            <ellipse cx="300" cy="130" rx="30" ry="40" fill="#D4E8F8" stroke="#4A8060" stroke-width="1.5"/>
+            <ellipse cx="300" cy="130" rx="18" ry="26" fill="#bae6fd" stroke="#4A8060" stroke-width="1"/>
+            <!-- フィルター枠 -->
+            <ellipse cx="300" cy="130" rx="30" ry="40" fill="none" stroke="#2A6050" stroke-width="2"/>
+            <line x1="88" y1="168" x2="20" y2="215" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="88" cy="168" r="2.5" fill="#1A3A2A"/>
+            <rect x="0" y="204" width="64" height="18" rx="3" fill="#1A3A2A"/>
+<text x="32" y="217" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント部</text>
+<text x="32" y="237" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">爪・電気接点</text>
+            <line x1="95" y1="92" x2="95" y2="52" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="95" cy="92" r="2.5" fill="#1A3A2A"/>
+            <rect x="52" y="40" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="93" y="53" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フォーカスリング</text>
+<text x="93" y="73" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">回転トルク確認</text>
+            <line x1="282" y1="100" x2="220" y2="50" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="282" cy="100" r="2.5" fill="#1A3A2A"/>
+            <rect x="165" y="38" width="70" height="18" rx="3" fill="#1A3A2A"/>
+<text x="200" y="51" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">前玉</text>
+<text x="200" y="71" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">カビ・キズ・曇り</text>
+            <line x1="318" y1="102" x2="380" y2="60" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="318" cy="102" r="2.5" fill="#1A3A2A"/>
+            <rect x="334" y="48" width="76" height="18" rx="3" fill="#1A3A2A"/>
+<text x="372" y="61" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フィルター枠</text>
+<text x="372" y="81" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ネジ山・歪み</text>
+            <line x1="200" y1="172" x2="200" y2="220" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="200" cy="172" r="2.5" fill="#1A3A2A"/>
+            <rect x="148" y="210" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="189" y="223" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">鏡胴外装</text>
+<text x="189" y="243" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">キズ・凹み確認</text>
+          </svg>
+          <div class="fig-cap">単焦点レンズ各部確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- 後玉確認図 -->
+            <text x="210" y="25" font-family="sans-serif" font-size="11" fill="#1A3A2A" text-anchor="middle" font-weight="bold">後玉・絞り羽根の確認</text>
+            <!-- 後玉断面 -->
+            <ellipse cx="130" cy="140" rx="45" ry="45" fill="#C8DDD0" stroke="#4A8060" stroke-width="2"/>
+            <ellipse cx="130" cy="140" rx="32" ry="32" fill="#D4E8F8" stroke="#2A6050" stroke-width="1.5"/>
+            <ellipse cx="130" cy="140" rx="18" ry="18" fill="#bae6fd"/>
+            <text x="130" y="195" font-family="sans-serif" font-size="10" fill="#1A3A2A" text-anchor="middle">後玉（マウント側）</text>
+            <text x="130" y="210" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">カビ・コーティング剥がれ確認</text>
+            <!-- 絞り羽根 -->
+            <g transform="translate(300,130)">
+              <ellipse cx="0" cy="-22" rx="9" ry="24" fill="#6A8070" stroke="#4A8060" stroke-width="1" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-22" rx="9" ry="24" fill="#6A8070" stroke="#4A8060" stroke-width="1" transform="rotate(60)"/>
+              <ellipse cx="0" cy="-22" rx="9" ry="24" fill="#6A8070" stroke="#4A8060" stroke-width="1" transform="rotate(120)"/>
+              <ellipse cx="0" cy="-22" rx="9" ry="24" fill="#6A8070" stroke="#4A8060" stroke-width="1" transform="rotate(180)"/>
+              <ellipse cx="0" cy="-22" rx="9" ry="24" fill="#6A8070" stroke="#4A8060" stroke-width="1" transform="rotate(240)"/>
+              <ellipse cx="0" cy="-22" rx="9" ry="24" fill="#6A8070" stroke="#4A8060" stroke-width="1" transform="rotate(300)"/>
+              <circle cx="0" cy="0" r="14" fill="#1A2A20"/>
+              <circle cx="0" cy="0" r="9" fill="#0A1510"/>
+            </g>
+            <text x="300" y="175" font-family="sans-serif" font-size="10" fill="#1A3A2A" text-anchor="middle">絞り羽根</text>
+            <text x="300" y="190" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">油膜・動作確認</text>
+          </svg>
+          <div class="fig-cap">後玉・絞り羽根の確認方法</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">鏡胴外装のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">全周を回転させながら目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">フォーカスリングの回転感触</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">引っかかり・遊び・硬さを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">AF/MFスイッチの状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">スイッチの切り替え操作を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">フィルター枠の変形・ネジ山破損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">フィルターを実際に取り付けてテストする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">マウント部の傷・変形・接点状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">接点の汚れ・腐食を目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">レンズキャップ・リアキャップの有無</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">有無および状態を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">前玉のカビ・曇り・キズ</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDライトで透過・反射の両方向から確認する。</div></div>
+        <div class="col3"><div class="col3-body">カビは減額要因。軽微・中・多の3段階で記録する。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">後玉のカビ・曇り・キズ</div><div class="warn-badge">⚠ 特に重要</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">後玉は写りへの影響が最も大きい。LEDで透過・反射確認する。</div></div>
+        <div class="col3"><div class="col3-body">カビ・コーティング剥がれは大幅減額。必ず記録。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">内部レンズのカビ・バルサム剥がれ</div><div class="warn-badge">⚠ 修理不可</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">光を透過させ内部確認。バルサム剥がれは乳白色の分離として見える。</div></div>
+        <div class="col3"><div class="col3-body">バルサム剥がれは修理不可。価値大幅減。必ず記録。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">絞り羽根の油膜・動作</div><div class="warn-badge">⚠ 整備必要</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">絞りを素早く動かして遅延・固着を確認する。LEDで油膜（虹色）を確認する。</div></div>
+        <div class="col3"><div class="col3-body">油膜は修理が必要。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">AFモーター動作・合焦速度</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">カメラに装着してAF動作を確認する。近距離・遠距離で確認する。</div></div>
+        <div class="col3"><div class="col3-body">異音・迷いフォーカスは記録する。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">レンズ内ゴミ・ほこり量</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDで内部を確認し、量と位置を記録する。</div></div>
+        <div class="col3"><div class="col3-body">軽微・中程度・多量の3段階で記録する。</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Canon EF系：USMモーター音</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">AF時の異音（ガリガリ・ジー音）を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">Nikon Gタイプ：絞りリングなし</div><div class="warn-badge">⚠ 記載必須</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">Gタイプは絞りリングがなくフィルムカメラで使用不可。</div></div>
+        <div class="col3"><div class="col3-body">商品説明に「絞りリングなし（フィルムカメラ非対応）」と記載必須。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">サードパーティ製：マウント適合確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">対応マウントとファームウェアアップデートの有無を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#prime -->
+
+  <div id="standard-zoom" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- 鏡胴（ズームは長め） -->
+            <rect x="60" y="90" width="270" height="80" rx="14" fill="#E8F2EE" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- マウント部 -->
+            <rect x="60" y="90" width="60" height="80" rx="14" fill="#C8DDD0" stroke="#2A6050" stroke-width="2"/>
+            <!-- ズームリング（太め） -->
+            <rect x="120" y="90" width="72" height="80" fill="#B8D0C0" stroke="#2A6050" stroke-width="2"/>
+            <!-- フォーカスリング -->
+            <rect x="60" y="102" width="12" height="56" rx="3" fill="#1A3A2A" stroke="#2A6050" stroke-width="1"/>
+            <!-- 前玉 -->
+            <ellipse cx="330" cy="130" rx="28" ry="38" fill="#D4E8F8" stroke="#4A8060" stroke-width="1.5"/>
+            <ellipse cx="330" cy="130" rx="16" ry="24" fill="#bae6fd" stroke="#4A8060" stroke-width="1"/>
+            <line x1="70" y1="92" x2="20" y2="55" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="70" cy="92" r="2.5" fill="#1A3A2A"/>
+            <rect x="0" y="43" width="64" height="18" rx="3" fill="#1A3A2A"/>
+<text x="32" y="56" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント部</text>
+<text x="32" y="76" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">爪・電気接点</text>
+            <line x1="73" y1="92" x2="73" y2="52" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="73" cy="92" r="2.5" fill="#1A3A2A"/>
+            <rect x="30" y="40" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="71" y="53" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フォーカスリング</text>
+<text x="71" y="73" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">回転トルク確認</text>
+            <line x1="156" y1="90" x2="156" y2="50" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="156" cy="90" r="2.5" fill="#1A3A2A"/>
+            <rect x="110" y="38" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="151" y="51" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ズームリング</text>
+<text x="151" y="71" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">伸縮・重さ確認</text>
+            <line x1="210" y1="90" x2="258" y2="50" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="210" cy="90" r="2.5" fill="#1A3A2A"/>
+            <rect x="218" y="38" width="78" height="18" rx="3" fill="#1A3A2A"/>
+<text x="257" y="51" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">焦点距離表示</text>
+<text x="257" y="71" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">印字確認</text>
+            <line x1="312" y1="100" x2="380" y2="60" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="312" cy="100" r="2.5" fill="#1A3A2A"/>
+            <rect x="336" y="48" width="76" height="18" rx="3" fill="#1A3A2A"/>
+<text x="374" y="61" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">前玉</text>
+<text x="374" y="81" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">カビ・傷確認</text>
+            <line x1="185" y1="172" x2="185" y2="220" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="185" cy="172" r="2.5" fill="#1A3A2A"/>
+            <rect x="133" y="210" width="92" height="18" rx="3" fill="#1A3A2A"/>
+<text x="179" y="223" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ズーム伸縮部</text>
+<text x="179" y="243" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ガタ・回転不良</text>
+          </svg>
+          <div class="fig-cap">標準ズームレンズ各部確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <text x="210" y="25" font-family="sans-serif" font-size="11" fill="#1A3A2A" text-anchor="middle" font-weight="bold">ズーム動作と光学系の確認</text>
+            <!-- 収縮状態 -->
+            <rect x="30" y="80" width="140" height="60" rx="10" fill="#E8F2EE" stroke="#4A8060" stroke-width="1.5"/>
+            <rect x="30" y="80" width="44" height="60" rx="10" fill="#C8DDD0" stroke="#2A6050" stroke-width="1.5"/>
+            <ellipse cx="167" cy="110" rx="22" ry="28" fill="#D4E8F8" stroke="#4A8060" stroke-width="1.5"/>
+            <text x="100" y="158" font-family="sans-serif" font-size="10" fill="#1A3A2A" text-anchor="middle">収縮（ワイド端）</text>
+            <!-- 伸長状態 -->
+            <rect x="220" y="72" width="160" height="60" rx="10" fill="#E8F2EE" stroke="#4A8060" stroke-width="1.5"/>
+            <rect x="220" y="72" width="44" height="60" rx="10" fill="#C8DDD0" stroke="#2A6050" stroke-width="1.5"/>
+            <rect x="264" y="72" width="54" height="60" fill="#B8D0C0" stroke="#2A6050" stroke-width="1.5"/>
+            <ellipse cx="376" cy="102" rx="22" ry="28" fill="#D4E8F8" stroke="#4A8060" stroke-width="1.5"/>
+            <text x="300" y="148" font-family="sans-serif" font-size="10" fill="#1A3A2A" text-anchor="middle">伸長（テレ端）</text>
+            <text x="210" y="190" font-family="sans-serif" font-size="10" fill="#B85A00" text-anchor="middle">ズーム時のガタ・鏡胴傾き・各端での光学確認を行う</text>
+            <text x="210" y="208" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle">ワイド端・テレ端両方でAF/MF動作を確認すること</text>
+          </svg>
+          <div class="fig-cap">ズーム動作・光学系の確認方法</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">鏡胴外装のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">全周を目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">ズームリングの回転感触</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">全焦点域で回してガタ・引っかかりを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">フォーカスリングの回転感触</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">引っかかり・遊び・硬さを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">ズームバレルの伸縮・ガタ</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">最大・最小ズームでバレル伸縮のガタを確認する。</div></div>
+        <div class="col3"><div class="col3-body">バレルの大きなガタは高額修理になる。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">ズームクリープ（自然落下）確認</div><div class="warn-badge">⚠ 要記録</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">鏡胴を上向きにしてズームが自然に落下しないか確認する。</div></div>
+        <div class="col3"><div class="col3-body">ズームクリープは商品説明に記載推奨。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">フィルター枠の変形・ネジ山破損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">フィルターを実際に取り付けてテストする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-07</div><div class="item-name">マウント部の傷・変形・接点状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">接点の汚れ・腐食を目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">前玉・後玉のカビ・曇り・キズ</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDで透過・反射の両方向から確認する。</div></div>
+        <div class="col3"><div class="col3-body">後玉は特に重要。3段階で記録する。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">内部レンズのカビ・バルサム剥がれ</div><div class="warn-badge">⚠ 修理不可</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">光を透過させ内部確認する。</div></div>
+        <div class="col3"><div class="col3-body">バルサム剥がれは修理不可。必ず記録。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">絞り羽根の油膜・動作</div><div class="warn-badge">⚠ 整備必要</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LED照射で油膜（虹色）を確認する。絞り動作の遅延も確認する。</div></div>
+        <div class="col3"><div class="col3-body">油膜は修理が必要。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">AFモーター動作・合焦速度</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">カメラ装着でAF動作確認。広角・望遠両端で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">IS/OIS（手ブレ補正）動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">搭載機種はスイッチON/OFFで動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">レンズ内ゴミ・ほこり量</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDで内部確認し量と位置を記録する。</div></div>
+        <div class="col3"><div class="col3-body">軽微・中程度・多量の3段階で記録する。</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Canon EF 24-70mm F2.8 L</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">鏡筒内部のゴミ量を確認する（多い個体が多い）。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">Nikon AF-S 24-70mm G：前玉繰り出しガタ</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">最大繰り出し時の前玉バレルのガタを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">タムロン・シグマ等サード製</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">マウント接点の摩耗・対応ファームウェアを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#standard-zoom -->
+
+  <div id="tele-zoom" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- 望遠鏡胴（長い） -->
+            <rect x="30" y="95" width="330" height="70" rx="12" fill="#E8F2EE" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- マウント部 -->
+            <rect x="30" y="95" width="52" height="70" rx="12" fill="#C8DDD0" stroke="#2A6050" stroke-width="2"/>
+            <!-- ズームリング -->
+            <rect x="82" y="95" width="68" height="70" fill="#B8D0C0" stroke="#2A6050" stroke-width="2"/>
+            <!-- フォーカスリング -->
+            <rect x="150" y="95" width="50" height="70" fill="#A8C8B8" stroke="#2A6050" stroke-width="2"/>
+            <!-- 手振れ補正スイッチ -->
+            <rect x="200" y="95" width="30" height="18" rx="4" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <!-- 前玉（大径） -->
+            <ellipse cx="358" cy="130" rx="24" ry="32" fill="#D4E8F8" stroke="#4A8060" stroke-width="1.5"/>
+            <ellipse cx="358" cy="130" rx="14" ry="20" fill="#bae6fd"/>
+            <!-- 三脚座 -->
+            <rect x="140" y="163" width="50" height="22" rx="4" fill="#8AAAA0" stroke="#4A8060" stroke-width="1.5"/>
+            <line x1="42" y1="97" x2="20" y2="58" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="42" cy="97" r="2.5" fill="#1A3A2A"/>
+            <rect x="0" y="46" width="58" height="18" rx="3" fill="#1A3A2A"/>
+<text x="29" y="59" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント</text>
+<text x="29" y="79" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">爪・接点確認</text>
+            <line x1="115" y1="95" x2="115" y2="55" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="115" cy="95" r="2.5" fill="#1A3A2A"/>
+            <rect x="68" y="43" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="109" y="56" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ズームリング</text>
+<text x="109" y="76" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">トルク・ガタ確認</text>
+            <line x1="175" y1="95" x2="175" y2="55" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="175" cy="95" r="2.5" fill="#1A3A2A"/>
+            <rect x="130" y="43" width="82" height="18" rx="3" fill="#1A3A2A"/>
+<text x="171" y="56" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フォーカスリング</text>
+<text x="171" y="76" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">回転・MF確認</text>
+            <line x1="215" y1="95" x2="260" y2="55" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="215" cy="95" r="2.5" fill="#1A3A2A"/>
+            <rect x="218" y="43" width="88" height="18" rx="3" fill="#1A3A2A"/>
+<text x="262" y="56" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ISスイッチ類</text>
+<text x="262" y="76" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">切替・接触確認</text>
+            <line x1="350" y1="102" x2="390" y2="62" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="350" cy="102" r="2.5" fill="#1A3A2A"/>
+            <rect x="354" y="50" width="58" height="18" rx="3" fill="#1A3A2A"/>
+<text x="383" y="63" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">前玉</text>
+<text x="383" y="83" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">カビ・傷</text>
+            <line x1="165" y1="183" x2="165" y2="225" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="165" cy="183" r="2.5" fill="#1A3A2A"/>
+            <rect x="112" y="214" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="152" y="227" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">三脚座</text>
+<text x="152" y="247" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">回転・固定確認</text>
+          </svg>
+          <div class="fig-cap">望遠ズームレンズ各部確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <text x="210" y="22" font-family="sans-serif" font-size="11" fill="#1A3A2A" text-anchor="middle" font-weight="bold">望遠レンズ特有の確認項目</text>
+            <!-- 鏡胴傾き確認図 -->
+            <line x1="80" y1="90" x2="320" y2="90" stroke="#B8D0C0" stroke-width="1" stroke-dasharray="6,3"/>
+            <rect x="80" y="100" width="220" height="50" rx="8" fill="#E8F2EE" stroke="#4A8060" stroke-width="1.5"/>
+            <text x="190" y="132" font-family="sans-serif" font-size="10" fill="#1A3A2A" text-anchor="middle">鏡胴がまっすぐな状態（良）</text>
+            <rect x="80" y="165" width="220" height="50" rx="8" fill="#FFF3E0" stroke="#D97000" stroke-width="1.5" transform="skewY(3)"/>
+            <text x="190" y="198" font-family="sans-serif" font-size="10" fill="#B85A00" text-anchor="middle">鏡胴が傾いた状態（要確認）</text>
+            <text x="210" y="238" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle">重量大のため落下による光軸ずれに注意</text>
+          </svg>
+          <div class="fig-cap">鏡胴傾き・光軸ずれの確認</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">鏡胴外装のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">全周を目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">ズームリングの回転感触</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">全焦点域で回してガタ・引っかかりを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">ズームロックスイッチの動作</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ロックON時にズームリングが固定されるか確認する。</div></div>
+        <div class="col3"><div class="col3-body">ロック不良は商品説明に記載推奨。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">三脚座の有無・動作状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">三脚座の脱着・回転動作を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">フィルター枠の変形・ネジ山破損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">フィルターを実際に取り付けてテストする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">マウント部の傷・変形・接点状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">接点の汚れ・腐食を目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">前玉・後玉のカビ・曇り・キズ</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDで透過・反射の両方向から確認する。</div></div>
+        <div class="col3"><div class="col3-body">後玉は特に重要。3段階で記録する。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">内部レンズのカビ・バルサム剥がれ</div><div class="warn-badge">⚠ 修理不可</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">光を透過させ内部確認する。</div></div>
+        <div class="col3"><div class="col3-body">バルサム剥がれは修理不可。必ず記録。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">絞り羽根の油膜・動作</div><div class="warn-badge">⚠ 整備必要</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LED照射で油膜（虹色）を確認する。</div></div>
+        <div class="col3"><div class="col3-body">油膜は修理が必要。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">AFモーター動作・合焦速度</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">カメラ装着でAF動作確認。テレ端での合焦速度を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">IS/OIS（手ブレ補正）動作</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">搭載機種はON/OFFで動作確認。補正モード切替も確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">レンズ内ゴミ・ほこり量</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDで内部確認し量と位置を記録する。</div></div>
+        <div class="col3"><div class="col3-body">軽微・中程度・多量の3段階で記録する。</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">シグマ 150-600mm：三脚座の緩み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">三脚座ネジの緩みを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">タムロン 100-400mm：ズームロック</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ズームロックスイッチの固定力を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">純正超望遠：IS補正モード</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ISモード1・2・3の切り替えと動作を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#tele-zoom -->
+
+  <div id="compact" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- ボディ（薄型） -->
+            <rect x="80" y="60" width="220" height="150" rx="12" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- レンズユニット -->
+            <ellipse cx="150" cy="125" rx="38" ry="38" fill="#C8DDD0" stroke="#2A6050" stroke-width="2"/>
+            <ellipse cx="150" cy="125" rx="24" ry="24" fill="#D4E8F8" stroke="#4A8060" stroke-width="1.5"/>
+            <ellipse cx="150" cy="125" rx="12" ry="12" fill="#bae6fd"/>
+            <!-- フラッシュ -->
+            <rect x="205" y="68" width="30" height="18" rx="4" fill="#F5F9A0" stroke="#4A8060" stroke-width="1"/>
+            <!-- シャッターボタン -->
+            <ellipse cx="282" cy="66" rx="12" ry="7" fill="#9AAAA0" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- ストラップ穴 -->
+            <rect x="80" y="100" width="8" height="20" rx="3" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <!-- ズームスイッチ -->
+            <rect x="261" y="76" width="32" height="12" rx="5" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <line x1="150" y1="90" x2="100" y2="45" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="150" cy="90" r="2.5" fill="#1A3A2A"/>
+            <rect x="52" y="33" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="92" y="46" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">レンズユニット</text>
+<text x="92" y="66" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">カビ・傷・鏡胴</text>
+            <line x1="220" y1="72" x2="268" y2="42" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="220" cy="72" r="2.5" fill="#1A3A2A"/>
+            <rect x="228" y="30" width="76" height="18" rx="3" fill="#1A3A2A"/>
+<text x="266" y="43" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フラッシュ部</text>
+<text x="266" y="63" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">発光確認</text>
+            <line x1="282" y1="59" x2="330" y2="30" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="282" cy="59" r="2.5" fill="#1A3A2A"/>
+            <rect x="292" y="18" width="88" height="18" rx="3" fill="#1A3A2A"/>
+<text x="336" y="31" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">シャッターボタン</text>
+<text x="336" y="51" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">押し感確認</text>
+            <line x1="155" y1="160" x2="80" y2="220" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="155" cy="160" r="2.5" fill="#1A3A2A"/>
+            <rect x="14" y="208" width="84" height="18" rx="3" fill="#1A3A2A"/>
+<text x="56" y="221" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">レンズ沈胴部</text>
+<text x="56" y="241" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">動作・異音確認</text>
+            <line x1="250" y1="180" x2="340" y2="220" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="250" cy="180" r="2.5" fill="#1A3A2A"/>
+            <rect x="298" y="210" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="338" y="223" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">端子カバー</text>
+<text x="338" y="243" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">破損・腐食</text>
+          </svg>
+          <div class="fig-cap">コンデジ前面の確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- 背面 -->
+            <rect x="70" y="60" width="220" height="150" rx="12" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- 液晶 -->
+            <rect x="82" y="72" width="150" height="110" rx="6" fill="#1A2A3A" stroke="#2A6050" stroke-width="1.5"/>
+            <rect x="87" y="77" width="140" height="100" rx="4" fill="#2A3A4A"/>
+            <!-- 操作ボタン群 -->
+            <circle cx="252" cy="100" r="7" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <circle cx="252" cy="120" r="5" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <circle cx="252" cy="138" r="5" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <circle cx="252" cy="155" r="5" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <!-- バッテリー蓋（底） -->
+            <rect x="130" y="208" width="70" height="10" rx="3" fill="#9AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <line x1="157" y1="127" x2="78" y2="90" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="157" cy="127" r="2.5" fill="#1A3A2A"/>
+            <rect x="10" y="78" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="50" y="91" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">背面液晶</text>
+<text x="50" y="111" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ドット欠け・傷</text>
+            <line x1="252" y1="93" x2="330" y2="65" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="252" cy="93" r="2.5" fill="#1A3A2A"/>
+            <rect x="290" y="53" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="330" y="66" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">操作ボタン</text>
+<text x="330" y="86" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">反応・印字確認</text>
+            <line x1="165" y1="208" x2="100" y2="240" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="165" cy="208" r="2.5" fill="#1A3A2A"/>
+            <rect x="20" y="228" width="100" height="18" rx="3" fill="#1A3A2A"/>
+<text x="70" y="241" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">バッテリー/SDスロット</text>
+<text x="70" y="261" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">ロック・端子確認</text>
+          </svg>
+          <div class="fig-cap">背面・液晶の確認ポイント</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">外装全体のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">前面・背面・上面・底面・側面を全周目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">液晶モニターの傷・割れ・ドット抜き</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電源ON後、全面グレー表示で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">レンズバレルの伸縮状態</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電源ON/OFFでバレル収納の動作・音を確認する。</div></div>
+        <div class="col3"><div class="col3-body">バレル歪みや異音は故障の原因。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">各ボタン・ダイヤルのガタ・欠損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">操作して確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">バッテリー室・カードスロットの変形・腐食</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">端子部も目視する。</div></div>
+        <div class="col3"><div class="col3-body">液漏れ痕は要注意。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">USB/充電端子の腐食・変形</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">電源ON/OFFとレンズ収納動作</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">起動時のレンズ伸縮の動作と音を確認する。</div></div>
+        <div class="col3"><div class="col3-body">異音・途中停止は故障の前兆。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">ズームモーターの動作</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">全域で均一に動作するか確認する。</div></div>
+        <div class="col3"><div class="col3-body">ズーム途中での停止・異音は要記録。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">AFの合焦精度</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">近距離・中距離で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">フラッシュの発光</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">強制発光モードで確認する。</div></div>
+        <div class="col3"><div class="col3-body">発光しない・チャージが遅い場合は要記録。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">動画撮影の動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">録画・再生で画像・音声を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">メモリーカード読み書き</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">機種対応のメディアで確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-07</div><div class="item-name">バッテリー残量・膨張</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">純正/互換バッテリーの区別も記録する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Canon PowerShot G系：NDフィルター</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">NDフィルターの動作確認（ON/OFF切替）をする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">Sony RX100系：ポップアップEVF</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">EVFのポップアップ動作と表示を確認する。</div></div>
+        <div class="col3"><div class="col3-body">ポップアップ不動はヒンジ破損の可能性。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">Ricoh GR系：センサーゴミ</div><div class="warn-badge">⚠ 多い機種</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">F16で白壁撮影して確認する。ブロワー清掃も実施する。</div></div>
+        <div class="col3"><div class="col3-body">GRはセンサーゴミが付きやすい機種。</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#compact -->
+
+  <div id="film-slr" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- ボディ -->
+            <rect x="80" y="70" width="220" height="140" rx="10" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- グリップ -->
+            <rect x="265" y="78" width="46" height="132" rx="8" fill="#C8DDD0" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- ペンタプリズム -->
+            <polygon points="140,70 200,38 260,70" fill="#AABFB5" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- マウント -->
+            <ellipse cx="185" cy="150" rx="44" ry="46" fill="#D4E8DE" stroke="#2A6050" stroke-width="2"/>
+            <ellipse cx="185" cy="150" rx="27" ry="28" fill="#1A2A20" stroke="#2A6050" stroke-width="1.5"/>
+            <!-- フィルム巻き上げレバー（上部） -->
+            <rect x="230" y="58" width="36" height="14" rx="5" fill="#8AAAA0" stroke="#4A8060" stroke-width="1.5"/>
+            <line x1="248" y1="58" x2="256" y2="44" stroke="#4A8060" stroke-width="2"/>
+            <!-- シャッタースピードダイヤル -->
+            <ellipse cx="120" cy="65" rx="20" ry="10" fill="#9AAAA0" stroke="#4A8060" stroke-width="1.5"/>
+            <line x1="200" y1="38" x2="200" y2="10" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="200" cy="38" r="2.5" fill="#1A3A2A"/>
+            <rect x="155" y="0" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="195" y="13" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ファインダー</text>
+<text x="195" y="33" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">見え・プリズム劣化</text>
+            <line x1="163" y1="130" x2="60" y2="95" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="163" cy="130" r="2.5" fill="#1A3A2A"/>
+            <rect x="4" y="83" width="72" height="18" rx="3" fill="#1A3A2A"/>
+<text x="40" y="96" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント</text>
+<text x="40" y="116" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">爪・摩耗確認</text>
+            <line x1="248" y1="62" x2="300" y2="38" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="248" cy="62" r="2.5" fill="#1A3A2A"/>
+            <rect x="262" y="26" width="90" height="18" rx="3" fill="#1A3A2A"/>
+<text x="307" y="39" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">巻き上げレバー</text>
+<text x="307" y="59" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">動作・ラチェット</text>
+            <line x1="120" y1="55" x2="60" y2="30" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="120" cy="55" r="2.5" fill="#1A3A2A"/>
+            <rect x="6" y="18" width="88" height="18" rx="3" fill="#1A3A2A"/>
+<text x="50" y="31" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">SSダイヤル</text>
+<text x="50" y="51" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">各速度動作確認</text>
+            <line x1="289" y1="158" x2="380" y2="185" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="289" cy="158" r="2.5" fill="#1A3A2A"/>
+            <rect x="340" y="175" width="72" height="18" rx="3" fill="#1A3A2A"/>
+<text x="376" y="188" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">グリップ</text>
+<text x="376" y="208" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">劣化・ベタつき</text>
+          </svg>
+          <div class="fig-cap">フィルム一眼前面・操作系の確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- フィルム室 -->
+            <text x="210" y="22" font-family="sans-serif" font-size="11" fill="#1A3A2A" text-anchor="middle" font-weight="bold">フィルム室・裏蓋の確認（重要）</text>
+            <!-- 裏蓋開放図 -->
+            <rect x="60" y="40" width="220" height="170" rx="10" fill="#C8DDD0" stroke="#4A8060" stroke-width="2"/>
+            <!-- ミラー -->
+            <rect x="110" y="60" width="88" height="70" rx="4" fill="#AABFB5" stroke="#2A6050" stroke-width="1.5"/>
+            <line x1="110" y1="130" x2="198" y2="60" stroke="#2A6050" stroke-width="1.5"/>
+            <!-- フィルムレール -->
+            <rect x="70" y="75" width="30" height="110" rx="4" fill="#A0B8A8" stroke="#4A8060" stroke-width="1.5"/>
+            <rect x="242" y="75" width="28" height="110" rx="4" fill="#A0B8A8" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- シャッター幕 -->
+            <rect x="108" y="140" width="88" height="48" rx="3" fill="#2A3A2A" stroke="#1A3A2A" stroke-width="2"/>
+            <text x="152" y="170" font-family="sans-serif" font-size="9" fill="#A0C0A0" text-anchor="middle">シャッター幕</text>
+            <line x1="152" y1="90" x2="310" y2="60" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="152" cy="90" r="2.5" fill="#1A3A2A"/>
+            <rect x="268" y="48" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="308" y="61" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ミラー</text>
+<text x="308" y="81" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">カビ・コーティング</text>
+            <line x1="85" y1="130" x2="24" y2="160" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="85" cy="130" r="2.5" fill="#1A3A2A"/>
+            <rect x="0" y="150" width="56" height="18" rx="3" fill="#1A3A2A"/>
+<text x="28" y="163" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フィルム室</text>
+<text x="28" y="183" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">光線漏れ・汚れ</text>
+            <line x1="152" y1="148" x2="340" y2="170" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="152" cy="148" r="2.5" fill="#1A3A2A"/>
+            <rect x="302" y="160" width="88" height="18" rx="3" fill="#1A3A2A"/>
+<text x="346" y="173" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">シャッター幕</text>
+<text x="346" y="193" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">穴・破れ・たわみ</text>
+            <line x1="255" y1="130" x2="350" y2="110" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="255" cy="130" r="2.5" fill="#1A3A2A"/>
+            <rect x="312" y="98" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="352" y="111" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フィルムレール</text>
+<text x="352" y="131" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">清掃状態確認</text>
+          </svg>
+          <div class="fig-cap">フィルム室・シャッター幕の確認ポイント</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">外装全体のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">前面・背面・上面・底面・側面を全周目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">ファインダー接眼部ラバーの状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">剥がれ・劣化・ひび割れを目視する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">グリップ・各部ラバーの状態</div><div class="warn-badge">⚠ 加水分解</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">べたつき・剥がれ・ひび割れを確認する。</div></div>
+        <div class="col3"><div class="col3-body">古い機種は加水分解が多い。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">各ダイヤル・ボタンのガタ・欠損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">シャッタースピードダイヤル・絞りリング等を操作して確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">マウント部の傷・変形</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">レンズ装着・取り外しで動作確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">裏蓋の開閉・ラッチの状態</div><div class="warn-badge">⚠ 光漏れ注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">開閉確認。ラッチが確実に閉まるか確認する。</div></div>
+        <div class="col3"><div class="col3-body">ラッチ不良は光漏れ・撮影不可の原因。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-07</div><div class="item-name">バッテリー室の腐食</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">端子の腐食・緑青を確認する。</div></div>
+        <div class="col3"><div class="col3-body">腐食が強い場合は修理困難な場合がある。</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">シャッター動作（全速確認）</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">B・低速・高速すべて試す。動作・音・速度の異常がないか確認する。</div></div>
+        <div class="col3"><div class="col3-body">布幕シャッターは穴開きに注意。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">シャッター幕の状態</div><div class="warn-badge">⚠ 高額修理</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">幕の破れ・穴・油染みをLED照射で目視する。</div></div>
+        <div class="col3"><div class="col3-body">幕破損は高額修理。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">ミラーの動作・傷・汚れ</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ミラーアップ時に目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">ライトシール（モルト）の状態</div><div class="warn-badge">⚠ 必須確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">裏蓋を開けて四隅・ヒンジ部のモルトを確認する。</div></div>
+        <div class="col3"><div class="col3-body">劣化・べたつきは撮影前に交換が必要。商品説明に記載推奨。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">フィルム圧板の状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">フィルム室内の圧板に傷・汚れがないか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">露出計の動作</div><div class="warn-badge">⚠ 電池注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電源ON後、露出計の針・表示が明暗に反応するか確認する。</div></div>
+        <div class="col3"><div class="col3-body">水銀電池対応機が多い。電池の種類・アダプター要否を記載する。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-07</div><div class="item-name">ファインダー像（カビ・曇り）</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">明るい方向へ向けて確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-08</div><div class="item-name">セルフタイマーの動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">セルフタイマー動作を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Canon AE-1/A-1：鳴き病</div><div class="warn-badge">⚠ 有名な持病</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">シャッター作動時に「シャー」「キュー」等の異音がないか確認する。</div></div>
+        <div class="col3"><div class="col3-body">鳴き病は清掃または修理が必要。必ず記録する。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">Canon F-1系：低速シャッター粘り</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">1/4秒以下の低速シャッターの粘りを確認する。</div></div>
+        <div class="col3"><div class="col3-body">粘りがある場合は分解清掃が必要。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">Nikon FM2：チタン幕シャッター</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">チタン幕の傷・凹みを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-04</div><div class="item-name">Olympus OM-1：水銀電池</div><div class="warn-badge">⚠ 電池アダプター</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">水銀電池（MR44）非対応のためアダプターが必要。露出計動作を確認する。</div></div>
+        <div class="col3"><div class="col3-body">電池の種類・アダプター要否を商品説明に記載する。</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#film-slr -->
+
+  <div id="film-compact" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <!-- ボディ（横長薄型） -->
+            <rect x="60" y="70" width="260" height="140" rx="12" fill="#E8F2EE" stroke="#4A8060" stroke-width="2"/>
+            <!-- レンズ -->
+            <ellipse cx="130" cy="130" rx="32" ry="32" fill="#C8DDD0" stroke="#2A6050" stroke-width="2"/>
+            <ellipse cx="130" cy="130" rx="20" ry="20" fill="#D4E8F8" stroke="#4A8060" stroke-width="1.5"/>
+            <ellipse cx="130" cy="130" rx="10" ry="10" fill="#bae6fd"/>
+            <!-- ファインダー窓 -->
+            <rect x="200" y="88" width="30" height="22" rx="4" fill="#1A2A3A" stroke="#4A8060" stroke-width="1"/>
+            <!-- フラッシュ -->
+            <rect x="240" y="88" width="24" height="22" rx="4" fill="#F5F9A0" stroke="#4A8060" stroke-width="1"/>
+            <!-- シャッターボタン -->
+            <ellipse cx="290" cy="72" rx="12" ry="7" fill="#9AAAA0" stroke="#4A8060" stroke-width="1.5"/>
+            <!-- デートバック（右下） -->
+            <rect x="260" y="155" width="52" height="40" rx="4" fill="#D4E8DE" stroke="#4A8060" stroke-width="1"/>
+            <text x="286" y="180" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle">DATE</text>
+            <line x1="130" y1="100" x2="80" y2="50" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="130" cy="100" r="2.5" fill="#1A3A2A"/>
+            <rect x="28" y="38" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="68" y="51" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">レンズ</text>
+<text x="68" y="71" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">カビ・傷確認</text>
+            <line x1="215" y1="88" x2="185" y2="52" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="215" cy="88" r="2.5" fill="#1A3A2A"/>
+            <rect x="140" y="40" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="180" y="53" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">ファインダー</text>
+<text x="180" y="73" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">視野・汚れ確認</text>
+            <line x1="252" y1="88" x2="310" y2="52" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="252" cy="88" r="2.5" fill="#1A3A2A"/>
+            <rect x="270" y="40" width="76" height="18" rx="3" fill="#1A3A2A"/>
+<text x="308" y="53" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フラッシュ</text>
+<text x="308" y="73" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">発光確認</text>
+            <line x1="290" y1="65" x2="350" y2="38" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="290" cy="65" r="2.5" fill="#1A3A2A"/>
+            <rect x="312" y="26" width="88" height="18" rx="3" fill="#1A3A2A"/>
+<text x="356" y="39" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">シャッターボタン</text>
+<text x="356" y="59" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">半押し確認</text>
+            <line x1="286" y1="155" x2="286" y2="118" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="286" cy="155" r="2.5" fill="#1A3A2A"/>
+            <rect x="240" y="106" width="92" height="18" rx="3" fill="#1A3A2A"/>
+<text x="286" y="119" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">デートバック</text>
+<text x="286" y="139" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">表示・電池確認</text>
+          </svg>
+          <div class="fig-cap">フィルムコンパクト前面の確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <text x="210" y="22" font-family="sans-serif" font-size="11" fill="#1A3A2A" text-anchor="middle" font-weight="bold">フィルム室・裏蓋の確認</text>
+            <!-- 裏蓋開放図 -->
+            <rect x="70" y="38" width="240" height="160" rx="10" fill="#C8DDD0" stroke="#4A8060" stroke-width="2"/>
+            <!-- フィルム室左 -->
+            <circle cx="105" cy="120" r="30" fill="#A0B8A8" stroke="#4A8060" stroke-width="1.5"/>
+            <circle cx="105" cy="120" r="18" fill="#8AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <!-- フィルム室右 -->
+            <circle cx="275" cy="120" r="22" fill="#A0B8A8" stroke="#4A8060" stroke-width="1.5"/>
+            <circle cx="275" cy="120" r="13" fill="#8AAAA0" stroke="#4A8060" stroke-width="1"/>
+            <!-- シャッター幕（中央） -->
+            <rect x="138" y="80" width="108" height="80" rx="4" fill="#1A2A20" stroke="#2A6050" stroke-width="2"/>
+            <text x="192" y="125" font-family="sans-serif" font-size="9" fill="#A0C0A0" text-anchor="middle">シャッター/</text>
+            <text x="192" y="138" font-family="sans-serif" font-size="9" fill="#A0C0A0" text-anchor="middle">フィルム面</text>
+            <line x1="105" y1="90" x2="80" y2="50" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="105" cy="90" r="2.5" fill="#1A3A2A"/>
+            <rect x="28" y="38" width="72" height="18" rx="3" fill="#1A3A2A"/>
+<text x="64" y="51" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">パトローネ室</text>
+<text x="64" y="71" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">汚れ・腐食</text>
+            <line x1="192" y1="80" x2="192" y2="38" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="192" cy="80" r="2.5" fill="#1A3A2A"/>
+            <rect x="148" y="26" width="88" height="18" rx="3" fill="#1A3A2A"/>
+<text x="192" y="39" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フィルム面/幕</text>
+<text x="192" y="59" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">光線漏れ確認</text>
+            <line x1="275" y1="98" x2="350" y2="65" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="275" cy="98" r="2.5" fill="#1A3A2A"/>
+            <rect x="310" y="53" width="80" height="18" rx="3" fill="#1A3A2A"/>
+<text x="350" y="66" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">巻き取りスプール</text>
+<text x="350" y="86" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">動作確認</text>
+            <line x1="192" y1="198" x2="192" y2="230" stroke="#2A8060" stroke-width="1" stroke-dasharray="4,2"/><circle cx="192" cy="198" r="2.5" fill="#1A3A2A"/>
+            <rect x="138" y="220" width="100" height="18" rx="3" fill="#1A3A2A"/>
+<text x="188" y="233" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">裏蓋パッキン</text>
+<text x="188" y="253" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">劣化・光線漏れ</text>
+          </svg>
+          <div class="fig-cap">フィルム室・裏蓋の確認ポイント</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">外装全体のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">前面・背面・上面・底面・側面を全周目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">レンズの傷・カビ・曇り</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDで透過・反射確認する。</div></div>
+        <div class="col3"><div class="col3-body">カビは減額要因。3段階で記録する。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">ファインダーの汚れ・カビ</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">接眼してファインダー内を目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">ファインダー内カビは減額要因。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">各ボタンのガタ・欠損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">操作して確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">バッテリー室の腐食</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">端子の腐食・緑青を確認する。</div></div>
+        <div class="col3"><div class="col3-body">腐食が強い場合は動作不可の可能性がある。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">裏蓋の開閉・ラッチ・光漏れ確認</div><div class="warn-badge">⚠ 必須確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">開閉確認。ラッチが確実に閉まるか確認する。</div></div>
+        <div class="col3"><div class="col3-body">モルト劣化は撮影前に交換が必要。</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">電源ON/OFFの動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">起動確認。レンズバレル式は収納動作も確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">シャッター動作</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">試写してシャッター動作を確認する。</div></div>
+        <div class="col3"><div class="col3-body">シャッター不動・遅延は修理要。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">フラッシュの発光</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">強制発光で確認する。チャージ時間も確認する。</div></div>
+        <div class="col3"><div class="col3-body">発光しない・チャージが遅い場合は要記録。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">AFの合焦動作（AF機種のみ）</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">近距離・遠距離で確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">フィルム巻き上げモーターの動作</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電池を入れてシャッター後の巻き上げ動作を確認する。</div></div>
+        <div class="col3"><div class="col3-body">異音・空回りは修理要。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">ライトシール（モルト）の状態</div><div class="warn-badge">⚠ 必須確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">裏蓋を開けてモルトの劣化・べたつきを確認する。</div></div>
+        <div class="col3"><div class="col3-body">劣化・べたつきは撮影前交換が必要。商品説明に記載推奨。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-07</div><div class="item-name">露出計の動作</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">明暗に反応して表示が変化するか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="col-hdr"><div>対象機種</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Olympus μ（μ-II）：レンズカバー動作</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">電源ON/OFFでカバーの開閉をスムーズさを確認する。</div></div>
+        <div class="col3"><div class="col3-body">カバー不動は修理不可の場合がある。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">Contax T2/T3：高額品の真贋</div><div class="warn-badge">⚠ 必須確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">シリアルナンバーで真贋・製造年代を確認する。</div></div>
+        <div class="col3"><div class="col3-body">不明な場合はせどり業者（発注者）に確認を仰ぐ。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">Nikon L35AD/AF：蓋モルト劣化</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">ライトシールの劣化・べたつきを確認する。</div></div>
+        <div class="col3"><div class="col3-body">劣化している場合は商品説明に記載推奨。</div></div>
+      </div></div>
+    </div>
+  </div><!-- /#film-compact -->
+
+  <!-- ══════════════════════════════════════
+       ⑨ マニュアルレンズ（MF）
+  ══════════════════════════════════════ -->
+  <div id="mf-lens" class="tab-panel">
+
+    <!-- 各部名称図 -->
+    <div class="fig-box">
+      <div class="fig-title">各部名称と主な確認ポイント</div>
+      <div class="fig-row two">
+        <div>
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <rect x="60" y="95" width="240" height="80" rx="14" fill="#FFF3E0" stroke="#D97000" stroke-width="1.5"/>
+            <rect x="60" y="95" width="70" height="80" rx="14" fill="#D4B896" stroke="#B85A00" stroke-width="2"/>
+            <rect x="132" y="95" width="54" height="80" fill="#F5A94A" stroke="#B85A00" stroke-width="2"/>
+            <rect x="60" y="107" width="15" height="56" rx="4" fill="#B85A00" stroke="#B85A00" stroke-width="1"/>
+            <ellipse cx="282" cy="135" rx="28" ry="38" fill="#EDE5D8" stroke="#D97000" stroke-width="1.5"/>
+            <ellipse cx="282" cy="135" rx="18" ry="26" fill="#bae6fd" stroke="#D97000" stroke-width="1"/>
+            <!-- マウント -->
+            <line x1="67" y1="163" x2="20" y2="210" stroke="#B85A00" stroke-width="1" stroke-dasharray="4,2"/>
+            <circle cx="67" cy="163" r="2.5" fill="#B85A00"/>
+            <rect x="0" y="213" width="62" height="20" rx="4" fill="#B85A00"/>
+            <text x="31" y="227" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">マウント部</text>
+            <text x="18" y="246" font-family="sans-serif" font-size="9" fill="#7A2E0E">爪の摩耗確認</text>
+            <!-- フォーカスリング -->
+            <line x1="95" y1="95" x2="95" y2="55" stroke="#B85A00" stroke-width="1" stroke-dasharray="4,2"/>
+            <circle cx="95" cy="95" r="2.5" fill="#B85A00"/>
+            <rect x="55" y="36" width="82" height="20" rx="4" fill="#B85A00"/>
+            <text x="96" y="50" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フォーカスリング</text>
+            <text x="96" y="72" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">回転トルク確認</text>
+            <!-- 絞りリング -->
+            <line x1="159" y1="95" x2="159" y2="20" stroke="#5A3A1A" stroke-width="1" stroke-dasharray="4,2"/>
+            <circle cx="159" cy="95" r="2.5" fill="#5A3A1A"/>
+            <rect x="121" y="4" width="76" height="20" rx="4" fill="#5A3A1A"/>
+            <text x="159" y="18" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">絞りリング</text>
+            <text x="159" y="40" font-family="sans-serif" font-size="9" fill="#B85A00" text-anchor="middle">クリック感確認</text>
+            <!-- 前玉 -->
+            <line x1="304" y1="110" x2="360" y2="50" stroke="#D97000" stroke-width="1" stroke-dasharray="4,2"/>
+            <circle cx="304" cy="110" r="2.5" fill="#D97000"/>
+            <rect x="330" y="34" width="76" height="20" rx="4" fill="#D97000"/>
+            <text x="368" y="48" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">前玉・後玉</text>
+            <text x="368" y="70" font-family="sans-serif" font-size="9" fill="#5A4A30" text-anchor="middle">カビ・キズ・曇り</text>
+            <!-- 鏡胴 -->
+            <line x1="200" y1="175" x2="200" y2="220" stroke="#1A3A2A" stroke-width="1" stroke-dasharray="4,2"/>
+            <circle cx="200" cy="175" r="2.5" fill="#1A3A2A"/>
+            <rect x="155" y="222" width="90" height="20" rx="4" fill="#1A3A2A"/>
+            <text x="200" y="236" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">鏡胴外装</text>
+            <text x="200" y="254" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle">キズ・凹み確認</text>
+            <!-- フィルター枠 -->
+            <line x1="282" y1="173" x2="355" y2="215" stroke="#3A5040" stroke-width="1" stroke-dasharray="4,2"/>
+            <circle cx="282" cy="173" r="2.5" fill="#3A5040"/>
+            <rect x="318" y="218" width="90" height="20" rx="4" fill="#3A5040"/>
+            <text x="363" y="232" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">フィルター枠</text>
+            <text x="363" y="252" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle">ネジ山破損確認</text>
+          </svg>
+          <div class="fig-cap">レンズ各部名称と確認ポイント</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <text x="160" y="22" font-family="sans-serif" font-size="11" fill="#1A3A2A" text-anchor="middle" font-weight="bold">絞り羽根の確認</text>
+            <g transform="translate(90,135)">
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(45)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(90)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(135)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(180)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(225)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(270)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#94a3b8" stroke="#6A8070" stroke-width="1" transform="rotate(315)"/>
+              <circle cx="0" cy="0" r="20" fill="#1A2A1E"/>
+              <circle cx="0" cy="0" r="16" fill="#1A0E06"/>
+            </g>
+            <circle cx="90" cy="135" r="46" fill="none" stroke="#C04000" stroke-width="1.5" stroke-dasharray="5,3"/>
+            <defs><marker id="arr1" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#6A8070"/></marker></defs>
+            <line x1="140" y1="135" x2="178" y2="135" stroke="#6A8070" stroke-width="1.5" marker-end="url(#arr1)"/>
+            <g transform="translate(230,135)">
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(45)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(90)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(135)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(180)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(225)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(270)"/>
+              <ellipse cx="0" cy="-26" rx="11" ry="30" fill="#6A5A4A" stroke="#3A5040" stroke-width="1" transform="rotate(315)"/>
+              <circle cx="0" cy="0" r="7" fill="#1A2A1E"/>
+              <circle cx="0" cy="0" r="4" fill="#1A0E06"/>
+            </g>
+            <text x="90" y="200" font-family="sans-serif" font-size="10" fill="#1A3A2A" text-anchor="middle" font-weight="bold">開放</text>
+            <text x="90" y="214" font-family="sans-serif" font-size="9" fill="#6A8070" text-anchor="middle">素早く開閉して動作確認</text>
+            <text x="230" y="200" font-family="sans-serif" font-size="10" fill="#1A3A2A" text-anchor="middle" font-weight="bold">絞り込み</text>
+            <line x1="132" y1="110" x2="175" y2="60" stroke="#C04000" stroke-width="1" stroke-dasharray="3,2"/>
+            <rect x="148" y="40" width="162" height="22" rx="5" fill="#FBF0E8" stroke="#F5A080"/>
+            <text x="229" y="55" font-family="sans-serif" font-size="10" fill="#9B2000" text-anchor="middle" font-weight="bold">LEDで照らして虹色→油膜あり</text>
+          </svg>
+          <div class="fig-cap">絞り羽根の油膜・動作確認方法</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr ext"><h2>外観検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-01</div><div class="item-name">鏡胴外装のキズ・凹み</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">全周を回転させながら目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-02</div><div class="item-name">距離目盛りの読み取り状態</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">印刷の劣化・消えを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-03</div><div class="item-name">絞りリングのクリック感・滑らかさ</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">各絞り値でクリックが出るか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-04</div><div class="item-name">フォーカスリングの回転感触</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">引っかかり・遊び・硬さを確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-05</div><div class="item-name">フィルター枠の変形・ネジ山破損</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">フィルターを実際に取り付けてテストする。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-06</div><div class="item-name">マウント部の状態・爪の摩耗・欠け</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">Ai/Ai-S/FD/M42等、機種に合わせて爪部分を目視確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">EXT-07</div><div class="item-name">レンズキャップ・リアキャップの有無</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">有無および状態を確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+    </div>
+
+    <div class="fig-box" style="margin-top:28px;">
+      <div class="fig-title">光学系の確認方法（図解）</div>
+      <div class="fig-row three">
+        <div>
+          <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <ellipse cx="80" cy="65" rx="44" ry="49" fill="#FFF3E0" stroke="#D97000" stroke-width="1.5"/>
+            <ellipse cx="80" cy="65" rx="29" ry="35" fill="#EDE0CB" stroke="#B85A00" stroke-width="1"/>
+            <circle cx="18" cy="65" r="8" fill="#F0D090" stroke="#9B6030" stroke-width="1.5"/>
+            <line x1="26" y1="65" x2="44" y2="65" stroke="#E8C070" stroke-width="2" stroke-dasharray="4,3"/>
+            <circle cx="74" cy="55" r="4" fill="#C04000" opacity="0.75"/>
+            <circle cx="87" cy="72" r="3" fill="#C04000" opacity="0.7"/>
+            <text x="80" y="122" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle" font-weight="bold">透過光でカビ確認</text>
+          </svg>
+          <div class="fig-cap">LEDを後ろから当て透過で確認</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <ellipse cx="80" cy="65" rx="44" ry="49" fill="#FFF3E0" stroke="#D97000" stroke-width="1.5"/>
+            <ellipse cx="80" cy="65" rx="29" ry="35" fill="#EDE0CB" stroke="#B85A00" stroke-width="1"/>
+            <circle cx="140" cy="28" r="9" fill="#F0D090" stroke="#9B6030" stroke-width="1.5"/>
+            <line x1="133" y1="35" x2="108" y2="53" stroke="#E8C070" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <line x1="108" y1="53" x2="90" y2="33" stroke="#D4B896" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <path d="M70,44 Q78,40 86,47 Q82,55 74,52 Z" fill="#C04000" opacity="0.55"/>
+            <text x="80" y="122" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle" font-weight="bold">反射光でコーティング確認</text>
+          </svg>
+          <div class="fig-cap">斜めから光を当て反射で確認</div>
+        </div>
+        <div>
+          <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border:1px solid #B8D0C0;border-radius:6px;background:#F4F9F6;">
+            <ellipse cx="69" cy="65" rx="35" ry="43" fill="#FFF3E0" stroke="#D97000" stroke-width="1.5"/>
+            <ellipse cx="92" cy="65" rx="35" ry="43" fill="#EDE0CB" stroke="#B85A00" stroke-width="1.5" opacity="0.7"/>
+            <line x1="82" y1="22" x2="82" y2="108" stroke="#D97000" stroke-width="2" stroke-dasharray="4,2"/>
+            <path d="M82,37 Q90,44 82,54 Q74,48 82,37 Z" fill="#C04000" opacity="0.55"/>
+            <text x="82" y="12" font-family="sans-serif" font-size="7" fill="#7A5A30" text-anchor="middle">接合面</text>
+            <text x="80" y="122" font-family="sans-serif" font-size="9" fill="#1A3A2A" text-anchor="middle" font-weight="bold">バルサム剥がれ（修理不可）</text>
+          </svg>
+          <div class="fig-cap">乳白色の分離として見える</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-hdr fnc"><h2>機能検品</h2></div>
+    <div class="col-hdr"><div>項目</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-01</div><div class="item-name">前玉のカビ・曇り・キズ</div><div class="warn-badge">⚠ 要注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDライトで透過・反射の両方向から確認する。</div></div>
+        <div class="col3"><div class="col3-body">カビは減額要因。軽微・中・多の3段階で記録する。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-02</div><div class="item-name">後玉のカビ・曇り・キズ</div><div class="warn-badge">⚠ 特に重要</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">後玉は写りへの影響が最も大きい。LEDで透過・反射確認する。</div></div>
+        <div class="col3"><div class="col3-body">カビ・コーティング剥がれは大幅減額。必ず記録。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-03</div><div class="item-name">内部レンズのカビ・バルサム剥がれ・曇り</div><div class="warn-badge">⚠ 修理不可</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">光を透過させ内部確認。バルサム剥がれは乳白色の分離として見える。</div></div>
+        <div class="col3"><div class="col3-body">バルサム剥がれは修理不可。価値大幅減。必ず記録。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-04</div><div class="item-name">絞り羽根の油膜</div><div class="warn-badge">⚠ 整備必要</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">開放付近でLEDライトを後ろから照らす。羽根が虹色に輝けば油膜あり。</div></div>
+        <div class="col3"><div class="col3-body">絞り動作の遅延・固着を引き起こす。修理が必要。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-05</div><div class="item-name">絞り羽根の動作スピード（遅延）</div><div class="warn-badge">⚠ 要確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">絞りリングを素早く最小絞りにして素早く開放に戻るか確認する。</div></div>
+        <div class="col3"><div class="col3-body">遅延・固着は油膜の疑い。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-06</div><div class="item-name">ヘリコイドグリースの状態</div><div class="warn-badge">⚠ 要記録</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">フォーカスリングの回転トルク（重さ）を確認する。</div></div>
+        <div class="col3"><div class="col3-body">重すぎ・軽すぎは整備歴に注意。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-07</div><div class="item-name">無限遠でのピント</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">アダプターを介してカメラ装着し、遠景でピントが合うか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-08</div><div class="item-name">最短撮影距離でのピント</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">最短端まで回してピントが合うか確認する。</div></div>
+        <div class="col3"><div class="col3-body">—</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">FNC-09</div><div class="item-name">レンズ内ゴミ・ほこり量</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">LEDで内部を確認し、量と位置を記録する。</div></div>
+        <div class="col3"><div class="col3-body">軽微・中程度・多量の3段階で記録する。</div></div>
+      </div></div>
+    </div>
+
+    <div class="sec-hdr mdl"><span class="sec-tag">機種別</span><h2>機種別注意事項</h2></div>
+    <div class="callout warn"><div class="callout-icon">⚠</div><div>以下は<strong>手元の機種に該当する場合のみ</strong>確認してください。</div></div>
+    <div class="fig-box">
+      <div class="fig-title">主なMFレンズのマウント種別</div>
+      <div class="mount-grid">
+        <div class="mount-card">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="width:60px;height:60px;">
+            <circle cx="40" cy="40" r="32" fill="#FFF3E0" stroke="#B85A00" stroke-width="2"/>
+            <circle cx="40" cy="40" r="20" fill="#EDE0CB" stroke="#5A3A1A" stroke-width="1.5"/>
+            <path d="M8,40 L20,40" stroke="#C04000" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="20" cy="40" r="3.5" fill="#C04000"/>
+          </svg>
+          <div class="mount-name">Ai / Ai-S</div>
+          <div class="mount-note">Aiカプラーの摩耗・変形を必ず確認する</div>
+        </div>
+        <div class="mount-card">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="width:60px;height:60px;">
+            <circle cx="40" cy="40" r="32" fill="#FBF0E8" stroke="#B87040" stroke-width="2"/>
+            <circle cx="40" cy="40" r="20" fill="#F5C9A0" stroke="#9B4400" stroke-width="1.5"/>
+            <path d="M40,8 L40,20 M72,40 L60,40" stroke="#9B4400" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+          <div class="mount-name">Canon FD</div>
+          <div class="mount-note">補正レンズの必要性を商品説明に記載推奨</div>
+        </div>
+        <div class="mount-card">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="width:60px;height:60px;">
+            <circle cx="40" cy="40" r="32" fill="#E3F2FB" stroke="#2278AD" stroke-width="2"/>
+            <circle cx="40" cy="40" r="20" fill="#E3F2FB" stroke="#2278AD" stroke-width="1.5"/>
+            <path d="M8,34 Q40,26 72,34 M8,46 Q40,54 72,46" fill="none" stroke="#2278AD" stroke-width="1.5"/>
+          </svg>
+          <div class="mount-name">M42スクリュー</div>
+          <div class="mount-note">絞りピンの突き出し量を確認する</div>
+        </div>
+        <div class="mount-card">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="width:60px;height:60px;">
+            <circle cx="40" cy="40" r="32" fill="#F4F9F6" stroke="#8B5A30" stroke-width="2"/>
+            <circle cx="40" cy="40" r="20" fill="#FFF3E0" stroke="#7A5030" stroke-width="1.5"/>
+            <text x="40" y="47" font-family="sans-serif" font-size="20" fill="#7A5030" text-anchor="middle">★</text>
+          </svg>
+          <div class="mount-name">高額ブランド</div>
+          <div class="mount-note">シリアルで真贋・年代を確認する</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-hdr"><div>対象機種・マウント</div><div>確認内容・手順</div><div>注意事項・ポイント</div></div>
+    <div class="cards">
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-01</div><div class="item-name">Nikon Ai/Ai-S：Aiカプラーの状態</div><div class="warn-badge">⚠ 必須確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">マウント部のAiカプラー（開口部左側の突起）の摩耗・変形を確認する。</div></div>
+        <div class="col3"><div class="col3-body">欠損するとカメラ側の測光が機能しない。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-02</div><div class="item-name">Canon FD：フランジバック調整</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">FDレンズはミラーレス装着時に補正レンズなしでは無限遠が出ない場合がある。</div></div>
+        <div class="col3"><div class="col3-body">商品説明に記載推奨。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-03</div><div class="item-name">M42マウント：絞りピンの飛び出し量</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">マウント面のピンが正常に突き出しているか確認する。</div></div>
+        <div class="col3"><div class="col3-body">ピンが引っ込んでいると絞り制御が機能しない。</div></div>
+      </div></div>
+      <div class="card warn"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-04</div><div class="item-name">Super Takumar 50mm f/1.4：放射性ガラス</div><div class="warn-badge">⚠ 法的注意</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">後玉が黄変しているか確認する。黄変があれば放射性ガラス（トリウム）含有の可能性。</div></div>
+        <div class="col3"><div class="col3-body">出品時に「放射性ガラス使用」を必ず記載。Mercari等の規約も要確認。</div></div>
+      </div></div>
+      <div class="card"><div class="card-row">
+        <div class="col1"><div class="item-num">MDL-05</div><div class="item-name">高額ブランド（Zeiss等）：シリアル確認</div></div>
+        <div class="col2"><div class="col2-lbl">確認手順</div><div class="col2-body">刻印・シリアルナンバーで真贋・製造年代を確認する。</div></div>
+        <div class="col3"><div class="col3-body">不明な場合はせどり業者（発注者）に確認を仰ぐ。</div></div>
+      </div></div>
+    </div>
+
+  </div><!-- /#mf-lens -->
+
+</div><!-- /page-body -->
+
+<footer>中古カメラ 荷受・検品・清掃マニュアル &copy; 2026 — 無断複製禁止</footer>
+
+<script src="assets/tabs.js"></script>
+</body>
+</html>

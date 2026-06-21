@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中古カメラ 荷受・検品・清掃マニュアル</title>
+<link rel="stylesheet" href="assets/common.css">
+<style>
+  /* index.html 固有スタイル */
+  .hero {
+    background: #1A3A2A;
+    color: #fff;
+    padding: 56px 48px 48px;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.25);
+    color: rgba(255,255,255,.8);
+    font-size: 11px;
+    letter-spacing: .1em;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .hero-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 32px;
+  }
+
+  /* STEPカード */
+  .step-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 0;
+  }
+  .step-card {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: background .18s, transform .18s;
+  }
+  .step-card:hover {
+    background: #f5f9f6;
+    transform: translateY(-2px);
+  }
+  .step-card-accent {
+    width: 6px;
+    flex-shrink: 0;
+  }
+  .step-card.s1 .step-card-accent { background: #D97000; }
+  .step-card.s2 .step-card-accent { background: #2278AD; }
+  .step-card-body { padding: 18px 20px; }
+  .step-card-num {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: .1em;
+    margin-bottom: 4px;
+  }
+  .step-card-title {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .step-card.s1 .step-card-title { color: #B85A00; }
+  .step-card.s2 .step-card-title { color: #1A5F8A; }
+  .step-card-desc {
+    font-size: 12px;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+  .step-card-arrow {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  /* ジャンル一覧 */
+  .index-body { max-width: 980px; margin: 0 auto; padding: 40px 28px 80px; }
+
+  .genre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .genre-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: box-shadow .18s, transform .18s;
+    display: flex;
+    flex-direction: column;
+  }
+  .genre-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,.10);
+    transform: translateY(-2px);
+  }
+  .genre-card-num {
+    background: var(--navy);
+    color: rgba(255,255,255,.55);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    padding: 6px 12px;
+  }
+  .genre-card-body { padding: 12px 14px 14px; flex: 1; }
+  .genre-card-title {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .genre-card-ex {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .genre-card-links {
+    display: flex;
+    gap: 6px;
+    padding: 0 14px 12px;
+  }
+  .genre-link {
+    flex: 1;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity .15s;
+  }
+  .genre-link:hover { opacity: .8; }
+  .genre-link.s1 {
+    background: var(--step1-light);
+    color: var(--step1-dark);
+    border: 1px solid var(--step1-border);
+  }
+  .genre-link.s2 {
+    background: var(--step2-light);
+    color: var(--step2-dark);
+    border: 1px solid var(--step2-border);
+  }
+
+  /* 使い方 */
+  .how-to {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+  }
+  .how-to h2 {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--navy);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .how-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .how-step {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .how-num {
+    width: 24px; height: 24px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 900;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .how-text { font-size: 12.5px; color: var(--gray); line-height: 1.6; }
+  .how-text strong { color: var(--text); }
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <a href="index.html" class="logo">
+    中古カメラ 荷受・検品・清掃マニュアル
+    <span>Used Camera Inspection &amp; Cleaning Manual</span>
+  </a>
+  <nav class="step-nav">
+    <a href="index.html">🏠 TOP</a>
+    <a href="step1.html">🛠️ <span class="step-num">STEP 1</span> 検品</a>
+    <a href="step2.html">🫧 <span class="step-num">STEP 2</span> 清掃</a>
+  </nav>
+</header>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="hero-badge">USED CAMERA MANUAL / 2026</div>
+  <h1>中古カメラ<br>荷受・検品・清掃マニュアル</h1>
+  <div class="hero-sub">9ジャンル対応 ／ STEP1 検品 → STEP2 清掃 の2ステップ構成</div>
+  <div class="step-cards">
+    <a href="step1.html" class="step-card s1">
+      <div class="step-card-accent"></div>
+      <div class="step-card-body">
+        <div class="step-card-num">STEP 1</div>
+        <div class="step-card-title">🛠️ 検品</div>
+        <div class="step-card-desc">外観・機能・機種別注意事項を順番に確認する。各ジャンルごとの確認ポイントと注意事項を収録。</div>
+        <div class="step-card-arrow">→ 検品マニュアルを開く</div>
+      </div>
+    </a>
+    <a href="step2.html" class="step-card s2">
+      <div class="step-card-accent"></div>
+      <div class="step-card-body">
+        <div class="step-card-num">STEP 2</div>
+        <div class="step-card-title">🫧 清掃</div>
+        <div class="step-card-desc">清掃ツールの使い方と手順フローを掲載。アルコールシート・綿棒・爪楊枝・メガネ拭きを使った清掃方法。</div>
+        <div class="step-card-arrow">→ 清掃マニュアルを開く</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- メイン -->
+<div class="index-body">
+
+  <!-- 使い方 -->
+  <div class="how-to">
+    <h2>📖 このマニュアルの使い方</h2>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-num">1</div>
+        <div class="how-text">荷物が届いたら、対象のジャンルを確認する。</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">2</div>
+        <div class="how-text"><strong>STEP 1 検品</strong>を開き、ジャンルタブを選んで上から順に確認する。</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">3</div>
+        <div class="how-text">検品完了後、<strong>STEP 2 清掃</strong>を開き、手順どおりに清掃を行う。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ジャンル一覧 -->
+  <div class="sec-hdr ext" style="border-bottom-color: var(--navy);">    <h2 style="color:var(--navy);">対象ジャンル　全9種</h2>
+  </div>
+  <div class="genre-grid">
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 01</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">デジタル一眼レフ（本体）</div>
+        <div class="genre-card-ex">Canon EOS・Nikon D/F系・Sony α（Aマウント）</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#digital-slr" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#digital-slr" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 02</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">ミラーレスカメラ（本体）</div>
+        <div class="genre-card-ex">Sony α（Eマウント）・Fujifilm X・Nikon Z・Canon R・Panasonic S/G</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#mirrorless" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#mirrorless" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 03</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">単焦点レンズ（AF）</div>
+        <div class="genre-card-ex">各社純正・サードパーティ単焦点（AF対応）</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#prime" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#prime" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 04</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">標準ズームレンズ</div>
+        <div class="genre-card-ex">24-70mm・18-55mm等の標準域ズーム</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#standard-zoom" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#standard-zoom" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 05</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">高倍率ズームレンズ</div>
+        <div class="genre-card-ex">28-300mm・100-400mm等の高倍率・超望遠ズーム</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#tele-zoom" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#tele-zoom" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 06</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">コンパクトデジタルカメラ</div>
+        <div class="genre-card-ex">Panasonic LUMIX・Canon IXY・Sony Cyber-shot等</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#compact" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#compact" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 07</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">フィルム一眼レフ（本体）</div>
+        <div class="genre-card-ex">Nikon F3/FM2・Canon F-1・Olympus OM・Pentax K等</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#film-slr" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#film-slr" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 08</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">フィルムコンパクトカメラ</div>
+        <div class="genre-card-ex">Olympus μ・Nikon L35・Contax T等</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#film-compact" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#film-compact" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+    <div class="genre-card">
+      <div class="genre-card-num">GENRE 09</div>
+      <div class="genre-card-body">
+        <div class="genre-card-title">マニュアルレンズ（MF）</div>
+        <div class="genre-card-ex">Nikon Ai/Ai-S・Canon FD・M42・Cマウント等オールドレンズ</div>
+      </div>
+      <div class="genre-card-links">
+        <a href="step1.html#mf-lens" class="genre-link s1">🛠️ 検品</a>
+        <a href="step2.html#mf-lens" class="genre-link s2">🫧 清掃</a>
+      </div>
+    </div>
+
+  </div><!-- /genre-grid -->
+
+  <div class="callout warn" style="margin-top:28px;">
+    <div class="callout-icon">⚠</div>
+    <div>作業中は常にスタッフが近くにいる状態を保つこと。商品は1点ずつ、開封から作業完了まで通しで扱う。</div>
+  </div>
+
+</div><!-- /index-body -->
+
+<footer>中古カメラ 荷受・検品・清掃マニュアル &copy; 2026 — 無断複製禁止</footer>
+
+</body>
+</html>

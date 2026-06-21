@@ -1,0 +1,510 @@
+/* ═══════════════════════════════════════════════
+   common.css — 中古カメラ 検品・清掃マニュアル
+   共通スタイル（アースカラー・丸ゴシック版）
+═══════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap');
+
+/* ── CSS変数 ─────────────────────────────────── */
+:root {
+  /* STEP1 検品 オレンジ系 */
+  --step1-dark:   #B85A00;
+  --step1-mid:    #D97000;
+  --step1-light:  #FFF3E0;
+  --step1-border: #F5A94A;
+
+  /* STEP2 清掃 ブルー系 */
+  --step2-dark:   #1A5F8A;
+  --step2-mid:    #2278AD;
+  --step2-light:  #E3F2FB;
+  --step2-border: #7BBDD9;
+
+  /* 共通カラー（グリーン系ベース） */
+  --navy:         #1A3A2A;
+  --warn-dark:    #9B4400;
+  --warn-light:   #FBF0E8;
+  --warn-border:  #D4956A;
+  --warn-text:    #7A2E0E;
+  --red-dark:     #8B2000;
+
+  /* テキスト・背景 */
+  --text:         #1A2A1E;
+  --gray:         #3A5040;
+  --muted:        #6A8070;
+  --border:       #B8D0C0;
+  --bg:           #EEF4F0;
+  --white:        #FFFFFF;
+  --surface:      #F4F9F6;
+}
+
+/* ── リセット・ベース ────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ── ヘッダー ────────────────────────────────── */
+.site-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.site-header .logo {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header .logo span {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255,255,255,.55);
+  display: block;
+  letter-spacing: .04em;
+}
+
+/* ── STEPナビ ────────────────────────────────── */
+.step-nav {
+  display: flex;
+  gap: 6px;
+}
+
+.step-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 19px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-decoration: none;
+  color: #1A3A2A;
+  background: #ffffff;
+  border: 1px solid rgba(255,255,255,.3);
+  transition: all .18s;
+}
+
+.step-nav a:hover {
+  color: #fff;
+  background: rgba(255,255,255,.15);
+}
+
+.step-nav a[href="step1.html"]:hover {
+  background: var(--step1-mid);
+  color: #fff;
+  border-color: var(--step1-mid);
+}
+
+.step-nav a[href="step2.html"]:hover {
+  background: var(--step2-mid);
+  color: #fff;
+  border-color: var(--step2-mid);
+}
+
+.step-nav a.active-step1 {
+  background: var(--step1-mid);
+  color: #fff;
+  border-color: var(--step1-mid);
+}
+
+.step-nav a.active-step2 {
+  background: var(--step2-mid);
+  color: #fff;
+  border-color: var(--step2-mid);
+}
+
+.step-nav a .step-num {
+  font-size: 12px;
+  opacity: .7;
+  letter-spacing: .06em;
+}
+
+/* ── タブバー ────────────────────────────────── */
+.tab-bar {
+  background: #1A3A2A;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  position: sticky;
+  top: 53px;
+  z-index: 90;
+}
+
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab-bar button {
+  flex-shrink: 0;
+  padding: 11px 18px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255,255,255,.42);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .18s;
+  letter-spacing: .02em;
+}
+
+.tab-bar button:hover {
+  color: rgba(255,255,255,.75);
+}
+
+/* STEPごとのアクティブカラー */
+.step1-page .tab-bar button.active {
+  color: #F5A94A;
+  border-bottom-color: #D97000;
+}
+
+.step2-page .tab-bar button.active {
+  color: #7BBDD9;
+  border-bottom-color: #2278AD;
+}
+
+/* ── ページレイアウト ─────────────────────────── */
+.page-body {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 28px 80px;
+}
+
+/* タブパネル */
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── セクション見出し ────────────────────────── */
+.sec-hdr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 36px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 2.5px solid var(--border);
+}
+.sec-hdr:first-child { margin-top: 0; }
+
+.sec-hdr h2 {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.sec-tag {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* 外観 */
+.sec-hdr.ext { border-bottom-color: #D97000; }
+.sec-hdr.ext h2 { color: #B85A00; }
+.sec-hdr.ext .sec-tag { background: #FFF3E0; color: #B85A00; }
+
+/* 機能 */
+.sec-hdr.fnc { border-bottom-color: #E08C30; }
+.sec-hdr.fnc h2 { color: #C06A10; }
+.sec-hdr.fnc .sec-tag { background: #FFF8EE; color: #C06A10; }
+
+/* 機種別 */
+.sec-hdr.mdl { border-bottom-color: #2A8040; }
+.sec-hdr.mdl h2 { color: #1A5A30; }
+.sec-hdr.mdl .sec-tag { background: #E8F5EC; color: #1A5A30; }
+
+/* 清掃 */
+.sec-hdr.cln { border-bottom-color: #2278AD; }
+.sec-hdr.cln h2 { color: #1A5F8A; }
+.sec-hdr.cln .sec-tag { background: #E3F2FB; color: #1A5F8A; }
+
+/* ── カラムヘッダー ──────────────────────────── */
+.col-hdr {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2.2fr;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: rgba(0,0,0,.04);
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+/* ── カード ──────────────────────────────────── */
+.cards { display: grid; gap: 8px; }
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2.2fr;
+  align-items: stretch;
+}
+
+.col1 { padding: 12px 14px; border-right: 1px solid var(--border); }
+.col2 { padding: 12px 14px; border-right: 1px solid var(--border); }
+.col3 { padding: 12px 14px; }
+
+.item-num {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: .08em;
+  margin-bottom: 3px;
+}
+.item-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.45;
+}
+.col2-lbl {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin-bottom: 2px;
+}
+.col2-body, .col3-body {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+/* 警告カード */
+.card.warn { border-color: var(--warn-border); }
+.card.warn .col1 { background: var(--warn-light); }
+.card.warn .item-name { color: var(--warn-text); }
+
+.warn-badge {
+  display: inline-block;
+  background: #F5C9A0;
+  color: #7A2E0E;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+/* ── 図解ボックス ────────────────────────────── */
+.fig-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+
+.fig-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--gray);
+  letter-spacing: .04em;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fig-row { display: grid; gap: 20px; }
+.fig-row.two   { grid-template-columns: 1fr 1fr; }
+.fig-row.three { grid-template-columns: 1fr 1fr 1fr; }
+
+.fig-cap {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* ── ツールグリッド ──────────────────────────── */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.tool-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 6px 10px;
+  text-align: center;
+}
+.tool-card svg { display: block; margin: 0 auto 8px; }
+.tool-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+}
+.tool-note {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+/* ── マウントグリッド ────────────────────────── */
+.mount-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.mount-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 8px 12px;
+  text-align: center;
+}
+.mount-card svg { display: block; margin: 0 auto 8px; }
+.mount-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--step1-dark);
+  margin-bottom: 4px;
+}
+.mount-note {
+  font-size: 14px;
+  color: var(--warn-text);
+  line-height: 1.4;
+}
+
+/* ── 清掃ステップ ────────────────────────────── */
+.clean-steps { display: grid; gap: 10px; }
+
+.clean-step {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 14px;
+  align-items: start;
+  background: var(--white);
+  border: 1px solid var(--step2-border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.step-num {
+  width: 34px;
+  height: 34px;
+  background: var(--step2-dark);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--step2-dark);
+  margin-bottom: 4px;
+}
+
+.step-detail {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+.step-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.tool-pill {
+  background: var(--step2-light);
+  border: 1px solid var(--step2-border);
+  color: var(--step2-dark);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+/* ── コールアウト ────────────────────────────── */
+.callout {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 14px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+.callout-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+
+.callout.warn {
+  background: var(--warn-light);
+  border: 1px solid var(--warn-border);
+  border-left-color: var(--warn-dark);
+  color: var(--warn-text);
+}
+.callout.info {
+  background: #E8F4F0;
+  border: 1px solid #90C4A8;
+  border-left-color: #2A8060;
+  color: #1A4030;
+}
+
+/* ── フローSVG横スクロール ───────────────────── */
+.flow-wrap { overflow-x: auto; }
+
+/* ── フッター ────────────────────────────────── */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,.4);
+  text-align: center;
+  font-size: 13px;
+  padding: 16px;
+  margin-top: 40px;
+}
+
+/* ── 印刷 ────────────────────────────────────── */
+@media print {
+  body { background: #fff; }
+  .site-header, .tab-bar { display: none; }
+  .tab-panel { display: block !important; }
+  .card { break-inside: avoid; }
+  footer { display: none; }
+}
